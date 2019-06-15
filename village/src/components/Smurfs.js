@@ -11,7 +11,7 @@ class Smurfs extends Component {
     axios
       .get(`http://localhost:3333/smurfs`)
       .then(res => {
-        this.setState({ smurfs: res.data })
+        this.setState(() => ({ smurfs: res.data }))
       })
       .catch(err => console.log(err))
   }
