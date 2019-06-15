@@ -3,9 +3,13 @@ import axios from 'axios'
 import Smurf from './Smurf';
 
 class Smurfs extends Component {
-  state = {
-    smurfs: []
+  constructor(props) {
+    super(props)
+    this.state = {
+      smurfs: []
+    }
   }
+
 
   componentDidMount() {
     axios
